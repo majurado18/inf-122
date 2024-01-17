@@ -6,7 +6,7 @@ import Juego from './Componentes/Juego';
 function App() {
   return (
     <div className="App">
-      <Tablero/>
+      
       <Juego/>
     </div>
   );

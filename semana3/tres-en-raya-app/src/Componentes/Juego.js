@@ -1,8 +1,8 @@
 import React from 'react';
 import '../Style/Juego.css';
-import Historial from './Historial';
-import TableroE from './Tablero';
+import Tablero from './Tablero';
 import { useState } from 'react';
+import Historial from './Historial';
 
 function Juego() {
     const [historial, setHistorial] = useState([
@@ -43,7 +43,7 @@ function Juego() {
         <div className="juego">
             <div className="juego-tablero">
                 <h2>{ganador ? `Ganador: ${ganador}` : `Próximo jugador: ${jugador}`}</h2>
-                <TableroE cuadros={movimientoActual.cuadros} onClick={(i) => click(i)} />
+                <Tablero cuadros={movimientoActual.cuadros} onClick={(i) => click(i)} />
             </div>
             <Historial historial={historial} saltarA={saltarA} />
         </div>

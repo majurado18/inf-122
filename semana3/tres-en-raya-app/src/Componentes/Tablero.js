@@ -3,40 +3,31 @@ import '../Style/Tablero.css';
 import CuadroB from './CuadroB';
 
 
-function Tablero() {
-    const[cuadros, setCuadros] =useState(Array(9).fill(null));
-    const[jugador, setJugador] = useState("O");
-    const click = (i) => {
-        console.log(i);
-        console.log(jugador);
-        const cuadrosTemp = [...cuadros];
-        cuadrosTemp[i]=jugador;
-        setCuadros(cuadrosTemp);
-        console.log(cuadros);
-        if(jugador ==="X") {
-            setJugador("O");
-        }else{
-            setJugador("X")
-        }
-       
+function Tablero({ cuadros, onClick }) {
+    function renderizarCuadro(i) {
+        return (
+            <CuadroB
+                valor={cuadros[i]}
+                funcion={() => onClick(i)}
+            />
+        );
     }
+
     return (
-        <div className="juego">
-            <h1>Siguiente jugador:{jugador}</h1>
+        <div>
             <div className="tablero">
-                <CuadroB valor={cuadros[0]} funcion={() => click(0)} />
-                <CuadroB valor={cuadros[1]} funcion={() => click(1)} />
-                <CuadroB valor={cuadros[2]} funcion={() => click(2)} />
-                <CuadroB valor={cuadros[3]} funcion={() => click(3)} />
-                <CuadroB valor={cuadros[4]} funcion={() => click(4)} />
-                <CuadroB valor={cuadros[5]} funcion={() => click(5)} />
-                <CuadroB valor={cuadros[6]} funcion={() => click(6)} />
-                <CuadroB valor={cuadros[7]} funcion={() => click(7)} />
-                <CuadroB valor={cuadros[8]} funcion={() => click(8)} />
+                {renderizarCuadro(0)}
+                {renderizarCuadro(1)}
+                {renderizarCuadro(2)}
+                {renderizarCuadro(3)}
+                {renderizarCuadro(4)}
+                {renderizarCuadro(5)}
+                {renderizarCuadro(6)}
+                {renderizarCuadro(7)}
+                {renderizarCuadro(8)}
             </div>
         </div>
-        
-
     );
 }
+
 export default Tablero;
