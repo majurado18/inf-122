@@ -1,0 +1,34 @@
+:root{
+    --lg:160px;
+    --gray:#DCDCE5;
+    --orange:#FF872C;
+}
+button{
+    width: 300px;
+    height: 80px;
+    font-family: Roboto, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 24px;
+    background-color: var(--orange);
+}
+.boton-click{
+    width: 160px;
+}
+button:hover{
+    background-color: var(--gray);
+    color:var(--orange);
+}
+.contador{
+    min-width: 300px;
+    height: auto;
+    font-size: var(--lg);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray);
+    color: var(--orange);
+    align-items: center;
+    margin-bottom: 10px;
+}
