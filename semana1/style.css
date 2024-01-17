@@ -1,0 +1,51 @@
+body{
+    background-color:white;
+}
+h1{
+    color: #0000;
+}
+h2{
+    color: #0000;
+    
+}
+p{
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(76, 108, 342);
+}
+img{
+    max-width: 25%;
+    max-height: 25%;
+}
+.enviar{
+    border-radius: 5px;
+    background-color: #A5FFB1;
+    color: #272625;
+}
+.registrar{
+    border-radius: 10px;
+    background-color: #A5FFB1;
+    color: #272625; 
+}
+.iniciar{
+    border-radius: 10px;
+    background-color: #A5FFB1;
+    color: #272625;
+}
+ol li{
+    font-size: 30px;
+    color: purple;
+    align:center;
+}
+ul li{
+    color: green;
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+
+}
+.etiqueta{
+    background-color: #f478c7;
+    color: black;
+}
