@@ -1,0 +1,28 @@
+:root{
+    --lg: 160px;
+    --purple:#800080;
+    --black:#000000;
+    --white: #FFFFFF;
+}
+.contador{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-left: 30%;
+    height: 100vh;
+}
+.contador1 {
+    min-width: 300px;
+    height: auto;
+    font-size: var(--lg);
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    background-color: var(--black);
+    color: var(--purple);
+    align-items: center;
+    margin-bottom: 10px;
+}
