@@ -1,0 +1,63 @@
+:root {
+    --white:#FFFFFF;
+    --light-white: #DCDCE5;
+    --black:#000000;
+    --sm: 24px;
+}
+
+button {
+    width: 30px;
+    height: 80px;
+    font-family: Roboto, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: var(--sm);
+    background-color: var(--light-white);
+  
+
+}
+
+.contenedor-nota {
+    background-color: var(--white);
+
+}
+
+.editar-nota {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    color: var(--orange);
+
+}
+
+.editar-nota textarea {
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: var(--sm);
+    text-align: center;
+
+}
+
+.nota {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: var(--sm);
+    text-align: center;
+    
+}
+
+.boton {
+    width: 90px;
+    height: 30px;
+   
+}
+
+button:hover {
+    background-color: var(--light-white);
+    color: var(--black);
+}
