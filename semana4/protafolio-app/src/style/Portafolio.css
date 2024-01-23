@@ -21,10 +21,15 @@ body{
     margin: 10px ; 
      
 }
-
+.caji{
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
 .im img{
-    height: 170px;
-    width: 170px;
+    height: 300px;
+    width: 300px;
     border-radius: 192%;
     border: 50px;
     background-color: var(--white);
@@ -34,7 +39,8 @@ body{
 }
 
 .iconuno-icon{
-    height: 140px;
+    height: 200px;
+    width: 300px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
@@ -88,19 +94,19 @@ body{
     height: 80px;
     text-align: center;
 }
-.cajaCuatroo{
+.cajaCuatroo-imf{
     display:  grid;
     grid-template-columns: repeat(2, 1fr);
     width: 362px;
     height: 226px;
     border-radius: 15px;
 }
+
 .imf-img{
     height: 170px;
     width: 170px;
     background-color: var(--white);
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 30px;
