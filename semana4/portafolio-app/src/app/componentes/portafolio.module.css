@@ -1,0 +1,33 @@
+.cajaUnoo{
+    display: grid;
+    place-items: center; 
+    color: var(--cherry);
+    text-align:center;
+    font-size: x-large;
+    margin: 10px ; 
+     
+}
+.caji{
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.im img{
+    height: 300px;
+    width: 300px;
+    border-radius: 300%;
+    border: 100px;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+}
+
+
+@media(max-width: 720px){
+    .cajaUnoo{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 50px 10px 50px 10px;
+    }
+}

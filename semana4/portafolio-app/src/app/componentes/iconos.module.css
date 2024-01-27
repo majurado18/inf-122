@@ -1,0 +1,18 @@
+.icon img{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.iconuno-icon{
+    margin-left: auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+}
+.icon{
+    margin-left: auto;
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+}

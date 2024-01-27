@@ -1,0 +1,20 @@
+.cajaUnoo{
+    display: grid;
+    place-items: center; 
+    color: var(--cherry);
+    text-align:center;
+    font-size: x-large;
+    margin: 10px ; 
+     
+}
+
+.cajaDoss{
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cajatres{
+    text-align: center;
+    color: var(--cherry);
+}

@@ -1,0 +1,17 @@
+
+.cajaCuatroo-imf{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.imf-img{
+    height: 170px;
+    width: 170px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
